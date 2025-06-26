@@ -30,7 +30,7 @@ def send_whatsapp_alert():
     try:
         location_link = get_live_location()
         message = f"🚨 EMERGENCY ALERT: A scream was detected! 📍 Live Location: {location_link}"
-        kit.sendwhatmsg_instantly("+919676066029", message, wait_time=10)
+        kit.sendwhatmsg_instantly("+9191XXXXXXXX", message, wait_time=10)
         status_label.config(text="WhatsApp Alert Sent ✅", fg="green")
     except Exception as e:
         status_label.config(text=f"WhatsApp Alert Failed ❌: {e}", fg="red")
